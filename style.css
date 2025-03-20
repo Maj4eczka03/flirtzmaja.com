@@ -23,7 +23,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    width: auto;
     height: auto;
     object-fit: cover;
 }
@@ -385,3 +387,116 @@ body {
     background: linear-gradient(135deg, #ff3d66, #ff7eb3);
 }
 
+@media screen and (max-width: 600px) {
+    .video-1 {
+        min-width: 100%;
+        min-height: 100%;
+    }
+    .main-h3 {
+        font-size: 30px;
+        margin-bottom: -10px;
+    }
+    .main-h2 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+    .main-p {
+        font-size: 25px;
+        margin-top: 50px;
+        padding-bottom: 10px;
+    }
+    .text-main button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    .div-img img {
+        max-width: 90%;
+    }
+    .first-chapter p,
+    .second-chapter p,
+    .third-chapter p {
+        font-size: 18px;
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .reviews-theme {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .about-erodate {
+        padding: 30px 10px;
+        max-width: 90%;
+    }
+    .bot-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Tablet (min-width: 601px and max-width: 1024px) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .main-h3 {
+        font-size: 40px;
+    }
+    .main-h2 {
+        font-size: 50px;
+    }
+    .main-p {
+        font-size: 30px;
+    }
+    .text-main button {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+    .div-img img {
+        max-width: 70%;
+    }
+    .first-chapter p,
+    .second-chapter p,
+    .third-chapter p {
+        font-size: 20px;
+        padding: 12px;
+        margin: 15px auto;
+    }
+    .reviews-theme {
+        padding: 25px;
+        max-width: 80%;
+    }
+    .about-erodate {
+        padding: 40px 20px;
+        max-width: 80%;
+    }
+    .bot-button {
+        font-size: 1.2rem;
+        padding: 14px 25px;
+    }
+}
+
+/* Desktop (min-width: 1025px) - Style domyślne lub drobne korekty */
+@media screen and (min-width: 1025px) {
+    /* Możesz pozostawić domyślne style lub ewentualnie dodać:
+       np. zwiększenie max-width kontenerów */
+    .div-img img {
+        max-width: 40%;
+    }
+    .first-chapter p,
+    .second-chapter p,
+    .third-chapter p {
+        font-size: 22px;
+        padding: 15px;
+        margin: 20px auto;
+    }
+    .reviews-theme,
+    .about-erodate {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 768px) { 
+    .first-chapter p,
+    .second-chapter p,
+    .third-chapter p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
